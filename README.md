@@ -21,9 +21,5 @@ We are delighted to introduce our inaugural Python script. The development proce
 
 • 😍 Good Design
 
-## How To Use ❓
-• Open the batch file "requirements.bat"
-
-• Run GreekProject.py as administrator
-
-❗Make sure to read the file "READ.TXT
+## Author 📝
+Developed By GreeceForFun with 💖
