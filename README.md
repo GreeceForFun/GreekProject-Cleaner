@@ -26,11 +26,17 @@ We are delighted to introduce our inaugural Python script. The development proce
 ## Author & Testers 📝
 
 Tested By 🧪
+
 @Nikos_kar01
+
 @nekt_210
+
 @melissaropoulos.611
+
 @savvas_2008p
+
 @_oikonomoss _
+
 @alexandris_08
 
 💖 Developed By GreeceForFun with 💖
