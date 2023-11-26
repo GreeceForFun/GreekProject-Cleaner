@@ -1,0 +1,20 @@
+                                     ★ Please read this information to ensure optimal functionality of the cleaning system ★                                                              
+
+
+• Make sure to install python 3.11.5 and add to PATH (Other versions might not work) (https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)
+
+• Make sure to install all requirements using “requirements.bat”
+
+• Make sure to open the script as administrator to work properly
+
+• We strongly suggest the adoption of the Windows 11 operating system, Windows 10 OR Lower may cause the script to crash!
+
+• For now the script is designed to operate exclusively on the 'C' drive in a Windows environment.
+
+
+
+                                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                                               🔑 Username & Password: Root 🔑                                                                          
+                                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝This release is a beta version, indicating the possibility of encountering bugs. If you believe you have identified a bug, please reach out to GreeceForFun on Discord or theodoros_tsalkitzis on Instagram for prompt assistance. Your feedback is valuable in refining and improving our system. Thank you💖
