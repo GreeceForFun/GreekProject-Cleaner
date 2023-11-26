@@ -14,6 +14,9 @@ We are delighted to introduce our inaugural Python script. The development proce
 
 ## Features 🌟
 • 🔒 Not Deleting Private files/folder
+
 • 🪟 Supporting Windows 10/11
+
 • 🧹 Cleaning 5GB+ (Fresh Operating System)
+
 • 😍 Good Design
