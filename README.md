@@ -13,10 +13,17 @@
 We are delighted to introduce our inaugural Python script. The development process spanned two months as we meticulously addressed compatibility issues across various operating systems and antivirus software. We are confident in having resolved every identified bug; however, should you encounter any issues, please reach out to us on Instagram at @theodoros_tsalkitzhs.
 
 ## Features 🌟
-• 🔒 Not Deleting Private files/folder
+• 🔒 Not Deleting Private files/folder (Downloads/Pictures/Videos)
 
 • 🪟 Supporting Windows 10/11
 
 • 🧹 Cleaning 5GB+ (Fresh Operating System)
 
 • 😍 Good Design
+
+## How To Use ❓
+• Open the batch file "requirements.bat"
+
+• Run GreekProject.py as administrator
+
+❗Make sure to read the file "READ.TXT
