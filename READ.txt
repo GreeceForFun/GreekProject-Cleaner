@@ -11,10 +11,4 @@
 
 • For now the script is designed to operate exclusively on the 'C' drive in a Windows environment.
 
-
-
-                                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                                               🔑 Username & Password: Root 🔑                                                                          
-                                                              ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📝This release is a beta version, indicating the possibility of encountering bugs. If you believe you have identified a bug, please reach out to GreeceForFun on Discord or theodoros_tsalkitzis on Instagram for prompt assistance. Your feedback is valuable in refining and improving our system. Thank you💖
