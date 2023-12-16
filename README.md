@@ -13,9 +13,11 @@
 We are delighted to introduce our inaugural Python script. The development process spanned two months as we meticulously addressed compatibility issues across various operating systems and antivirus software. We are confident in having resolved every identified bug; however, should you encounter any issues, please reach out to us on Instagram at @theodoros_tsalkitzhs.
 
 ## Features 🌟
-• 🔒 Not Deleting Private files/folder (Downloads/Pictures/Videos)
+• 🔒 Not Deleting Private files/folders (Downloads/Pictures/Videos)
 
-• 🪟 Supporting Windows 10 & 11 
+• 🪟 Supporting Windows 10 & 11 Operating System
+
+• 🛡️ Debug Mode (Type "Debug" And Send A Message To GreeceForFun) 
 
 • 🧹 Cleaning 5GB+ (Fresh Operating System)
 
