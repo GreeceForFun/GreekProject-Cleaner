@@ -17,7 +17,7 @@ We are delighted to introduce our inaugural Python script. The development proce
 
 • 🪟 Supporting Windows 10 & 11 Operating System
 
-• 🛡️ Debug Mode (Type "Debug" And Send A Message To GreeceForFun) 
+• 🛡️ Debug Mode (Type "Debug") 
 
 • 🧹 Cleaning 5GB+ (Fresh Operating System)
 
