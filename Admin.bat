@@ -7,5 +7,5 @@ if "%ERRORLEVEL%" == "0" (
 ) else (
     :: We don't have administrator privileges, so request elevation
     echo Requesting administrative privileges...
-    powershell -Command "Start-Process 'python' -ArgumentList 'newgui.py' -Verb 'RunAs'"
+    powershell -Command "Start-Process 'python' -ArgumentList 'GreekProject.py' -Verb 'RunAs'"
 )
