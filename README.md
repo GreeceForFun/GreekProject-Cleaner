@@ -22,6 +22,8 @@ We are delighted to introduce our inaugural Python script. The development proce
 
 • 🤨 All Antivirus Are Supported
 
+📝 For Any Bugs Please Contact Me On Telegram --> @GreekManOfficial (https://t.me/GreekManOfficial)
+
 ## Author & Testers 📝
 
 Tested By 🧪
