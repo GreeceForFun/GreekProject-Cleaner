@@ -1,6 +1,1 @@
-pip install os-sys
-pip install colored
-pip install pathlib
-pip install packaging
-pip install psutil
-pip install requests
+pip install psutil colored pillow matplotlib requests WMI py-cpuinfo termcolor packaging
