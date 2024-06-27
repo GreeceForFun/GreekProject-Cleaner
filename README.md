@@ -1,4 +1,4 @@
-![ALT TEXT](image.png)
+
 
 <p align="center">
 🧹BEST PC CLEANER🫧
