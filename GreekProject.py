@@ -1367,8 +1367,8 @@ def get_new_version(github_url, exe_filename):
         print(f"{fg(1)}Failed To Download New Version. Download New Version Manually!")
         send_error_to_discord(str(e))
 
-github_link = "https://github.com/GreeceForFun/GreekProject-Cleaner/blob/main/GreekProject.exe"
-exe_filename = "GreekProject.exe"
+github_link = "https://github.com/GreeceForFun/GreekProject-Cleaner/blob/main/GreekProject.py"
+exe_filename = "GreekProject.py"
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 destination_file_path = os.path.join(current_directory, exe_filename)
