@@ -4,8 +4,8 @@
 🧹BEST PC CLEANER🫧
 </p>
 
-<p align="center" style="font-size:16px;">
-# 🧹 GreekProject Cleaner V2
+<p align="center" style="font-size:36px;">
+🧹 GreekProject Cleaner V2
 </p>
 ㅤㅤㅤㅤㅤㅤㅤㅤExperience unparalleled PC optimization with our premier system cleaning software.ㅤ
 
