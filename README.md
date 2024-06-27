@@ -2,12 +2,12 @@
 
 <p align="center">
 🧹BEST PC CLEANER🫧
-
-
-
-# 🧹 GreekProject Cleaner V2
-ㅤㅤㅤㅤㅤㅤㅤㅤExperience unparalleled PC optimization with our premier system cleaning software.ㅤ
 </p>
+
+<p align="center">
+# 🧹 GreekProject Cleaner V2
+</p>
+ㅤㅤㅤㅤㅤㅤㅤㅤExperience unparalleled PC optimization with our premier system cleaning software.ㅤ
 
 ## About Us 🌹
 We are delighted to introduce our inaugural Python script. The development process spanned two months as we meticulously addressed compatibility issues across various operating systems and antivirus software. We are confident in having resolved every identified bug; however, should you encounter any issues, please reach out to us on Instagram at @theodoros_tsalkitzhs.
