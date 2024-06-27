@@ -2,7 +2,9 @@
 
 <p align="center">
 🧹GreekProject Cleaner V2 
-  
+</p>
+
+<p align="center">
 Experience unparalleled PC optimization with our premier system cleaning software.ㅤ
 </p>
 
