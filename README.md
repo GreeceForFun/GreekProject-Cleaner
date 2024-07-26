@@ -20,7 +20,7 @@ We are delighted to introduce our inaugural Python script. The development proce
 
 • 😍 Good Design / Accessibility
 
-• 🤨 All Antivirus Are Supported
+• 🤨 All Antivirus Supported
 
 📝 For Any Bugs Please Contact Me On Telegram --> @GreekManOfficial (https://t.me/GreekManOfficial)
 
