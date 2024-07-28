@@ -147,7 +147,7 @@ def send_notification():
     requests.post(webhook_url, json=data)
 
 #Current Version
-current_version = "2.0"
+current_version = "2.1"
 
 #Under Maintenance Check
 check_github_link = "https://raw.githubusercontent.com/GreeceForFun/DoTLook/main/test.txt"
