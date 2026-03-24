@@ -23,21 +23,3 @@ We are delighted to introduce our inaugural Python script. The development proce
 • 🤨 All Antivirus Supported
 
 📝 For Any Bugs Please Contact Me On Telegram --> @GreekManOfficial (https://t.me/GreekManOfficial)
-
-## Author & Testers 📝
-
-Tested By 🧪
-
-@Nikos_kar01
-
-@_lenaakii
-
-@melissaropoulos.611
-
-@savvas_2008p
-
-@_oikonomoss _
-
-@alexandris_08
-
-💖 Developed By GreeceForFun with love 💖
